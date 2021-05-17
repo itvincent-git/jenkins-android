@@ -43,7 +43,7 @@ ENV JAVA_OPTS="-Xmx8192m"
 # docker run \
 #   -u root \
 #   -d \
-#   --name jenkins \
+#   --name jenkins-android-v1 \
 #   -p 8080:8080 \
 #   -p 50000:50000 \
 #   -v $DOCKERDATA_HOME/jenkins:/var/jenkins_home \
