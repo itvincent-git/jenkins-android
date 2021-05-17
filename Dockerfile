@@ -38,13 +38,15 @@ ADD android-sdk-linux.gz /opt
 ENV PATH ${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools:${PATH}
 
 # 增大java虚拟机内存
-ENV JAVA_OPTS="-Xmx8192m"
+# ENV JAVA_OPTS="-Xmx3072m"
 
+# export DOCKERDATA_HOME=/opt/docker_data/
 # docker run \
 #   -u root \
 #   -d \
+#   --restart always \
 #   --name jenkins-android-v1 \
 #   -p 8080:8080 \
 #   -p 50000:50000 \
 #   -v $DOCKERDATA_HOME/jenkins:/var/jenkins_home \
-#   jenkins-android-v1
+#   itvincent/jenkins-android-v1:1.1
